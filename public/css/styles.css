@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8dc; /* Pale Yellow */
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #ff69b4; /* Hot Pink */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text-pink {
+    color: #ff69b4; /* Hot Pink */
+}
+
+.text-pink:hover {
+    color: #ff1493; /* Deep Pink */
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.custom-input {
+    padding: 10px;
+    border: 2px solid #ff69b4; /* Hot Pink */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #ff1493; /* Deep Pink */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    outline: none;
+}
+
+.btn-pink {
+    background-color: #ff69b4; /* Hot Pink */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #ff1493; /* Deep Pink */
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
