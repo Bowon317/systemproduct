@@ -14,6 +14,14 @@
         <div class="card shadow-lg p-3 bg-light">
             <h1 class="text-center text-pink mb-4">Product List</h1>
             <a href="/admin/add-product" class="btn btn-pink mb-3">Add New Product</a>
+            
+            <form action="/search" method="GET" class="mb-3">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="ค้นหาสินค้า...">
+                    <button type="submit" class="btn btn-primary">ค้นหา</button>
+                </div>
+            </form>
+
             <div class="table-responsive">
                 <table class="table table-bordered table-hover text-center bg-white">
                     <thead class="table-pink">

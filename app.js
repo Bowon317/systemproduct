@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const adminRoutes = require('./routes/adminRoutes');
 const productRoutes = require('./routes/productRoutes');
-
+const Product = require('./models/Product');
 const app = express();
 
 // Middleware
@@ -20,6 +20,11 @@ app.use(express.json()); // รองรับ JSON
 app.use('/admin', adminRoutes);
 app.use('/admin', productRoutes);
 
+app.get('/search', async (req, res) => {
+    const searchTerm = req.query.q;
+    const products = await Product.search(searchTerm);
+    res.render('admin/products', { products });
+});
 
 // Start server
 const PORT = process.env.PORT || 3000;
